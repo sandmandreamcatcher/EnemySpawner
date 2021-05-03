@@ -8,7 +8,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8830402959213412444}
+  - component: {fileID: 4451055810644642629}
   - component: {fileID: 4394779195445519151}
   - component: {fileID: 7808293339148470768}
   - component: {fileID: 7886047417314899439}
@@ -20,7 +20,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8830402959213412444
+--- !u!4 &4451055810644642629
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 0}
-  _angle: 80
+  _rotationSpeed: 0
   _rotationDirection: 1
 --- !u!58 &7886047417314899439
 CircleCollider2D:
