@@ -223,7 +223,7 @@ PrefabInstance:
     - target: {fileID: 3234971472060456257, guid: ca66c139d99947644b8f0399a649d870,
         type: 3}
       propertyPath: m_Name
-      value: CorsarSpawner
+      value: CorsarCreator
       objectReference: {fileID: 0}
     - target: {fileID: 4394779195445519151, guid: ca66c139d99947644b8f0399a649d870,
         type: 3}
@@ -239,6 +239,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FlipY
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7808293339148470768, guid: ca66c139d99947644b8f0399a649d870,
+        type: 3}
+      propertyPath: _rigidbody
+      value: 
+      objectReference: {fileID: 721571422}
+    - target: {fileID: 7808293339148470768, guid: ca66c139d99947644b8f0399a649d870,
+        type: 3}
+      propertyPath: _angle
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7808293339148470768, guid: ca66c139d99947644b8f0399a649d870,
+        type: 3}
+      propertyPath: _rotationSpeed
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8830402959213412444, guid: ca66c139d99947644b8f0399a649d870,
         type: 3}
@@ -295,8 +310,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8830402959213412444, guid: ca66c139d99947644b8f0399a649d870,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8830402959213412444, guid: ca66c139d99947644b8f0399a649d870,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca66c139d99947644b8f0399a649d870, type: 3}
+--- !u!50 &721571422 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: -2098850922684116209, guid: ca66c139d99947644b8f0399a649d870,
+    type: 3}
+  m_PrefabInstance: {fileID: 721571421}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,7 +507,7 @@ PrefabInstance:
     - target: {fileID: 3234971472060456257, guid: ca66c139d99947644b8f0399a649d870,
         type: 3}
       propertyPath: m_Name
-      value: InvaiderSpawner
+      value: InvaiderCreator
       objectReference: {fileID: 0}
     - target: {fileID: 4394779195445519151, guid: ca66c139d99947644b8f0399a649d870,
         type: 3}
@@ -488,10 +519,30 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7808293339148470768, guid: ca66c139d99947644b8f0399a649d870,
+        type: 3}
+      propertyPath: _rigidbody
+      value: 
+      objectReference: {fileID: 1301459581}
+    - target: {fileID: 7808293339148470768, guid: ca66c139d99947644b8f0399a649d870,
+        type: 3}
+      propertyPath: _rotationDirection
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7808293339148470768, guid: ca66c139d99947644b8f0399a649d870,
+        type: 3}
+      propertyPath: _angle
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 7808293339148470768, guid: ca66c139d99947644b8f0399a649d870,
+        type: 3}
+      propertyPath: _rotationSpeed
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 8830402959213412444, guid: ca66c139d99947644b8f0399a649d870,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.8466015
+      value: 12.1
       objectReference: {fileID: 0}
     - target: {fileID: 8830402959213412444, guid: ca66c139d99947644b8f0399a649d870,
         type: 3}
@@ -543,8 +594,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8830402959213412444, guid: ca66c139d99947644b8f0399a649d870,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8830402959213412444, guid: ca66c139d99947644b8f0399a649d870,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca66c139d99947644b8f0399a649d870, type: 3}
+--- !u!50 &1301459581 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: -2098850922684116209, guid: ca66c139d99947644b8f0399a649d870,
+    type: 3}
+  m_PrefabInstance: {fileID: 1301459580}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1457751416 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8830402959213412444, guid: ca66c139d99947644b8f0399a649d870,
@@ -561,7 +628,7 @@ PrefabInstance:
     - target: {fileID: 3234971472060456257, guid: ca66c139d99947644b8f0399a649d870,
         type: 3}
       propertyPath: m_Name
-      value: DroidSpawner
+      value: DroidCreator
       objectReference: {fileID: 0}
     - target: {fileID: 4394779195445519151, guid: ca66c139d99947644b8f0399a649d870,
         type: 3}
@@ -572,6 +639,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FlipX
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7808293339148470768, guid: ca66c139d99947644b8f0399a649d870,
+        type: 3}
+      propertyPath: _rigidbody
+      value: 
+      objectReference: {fileID: 1463976820}
+    - target: {fileID: 7808293339148470768, guid: ca66c139d99947644b8f0399a649d870,
+        type: 3}
+      propertyPath: _angle
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 7808293339148470768, guid: ca66c139d99947644b8f0399a649d870,
+        type: 3}
+      propertyPath: _rotationSpeed
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 8830402959213412444, guid: ca66c139d99947644b8f0399a649d870,
         type: 3}
@@ -628,8 +710,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8830402959213412444, guid: ca66c139d99947644b8f0399a649d870,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 8830402959213412444, guid: ca66c139d99947644b8f0399a649d870,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.65
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca66c139d99947644b8f0399a649d870, type: 3}
+--- !u!50 &1463976820 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: -2098850922684116209, guid: ca66c139d99947644b8f0399a649d870,
+    type: 3}
+  m_PrefabInstance: {fileID: 1463976819}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1489081045
 GameObject:
   m_ObjectHideFlags: 0
