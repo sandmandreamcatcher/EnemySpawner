@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private GameObject[] _blackHoles = new GameObject[3];
+    [SerializeField] private List<Enemy> _enemies = new List<Enemy>();
+    [Range(0, 10)] [SerializeField] private float _cooldown = 2f;
+    private bool _enemySpawned;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+
+            Instantiate(_enemies[1]);
+  
     }
 }
