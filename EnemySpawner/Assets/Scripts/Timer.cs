@@ -15,14 +15,12 @@ public class Timer : MonoBehaviour
         if (_currentTimerValue < _timerCheckpoint)
         {
             _timerIsRunning = false;
-            _currentTimerValue += Time.deltaTime;
-            //    Debug.Log("Time:" + _currentTimerValue + "{-}" + TimerExpired);   
+            _currentTimerValue += Time.deltaTime;         
         }
         else
         {
             _timerIsRunning = true;
             _timeHasCome?.Invoke();
-            Debug.Log("Обнулили" + "{------}" + TimerExpired);
             _currentTimerValue = 0;
         }
     }
