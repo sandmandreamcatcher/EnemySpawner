@@ -13,6 +13,9 @@ GameObject:
   - component: {fileID: 7808293339148470768}
   - component: {fileID: 7886047417314899439}
   - component: {fileID: -2098850922684116209}
+  - component: {fileID: 508272163}
+  - component: {fileID: 5450740363530982611}
+  - component: {fileID: 4415809885009756657}
   m_Layer: 0
   m_Name: Black_hole
   m_TagString: Untagged
@@ -97,8 +100,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: -2098850922684116209}
-  _rotationSpeed: 40
-  _rotationDirection: -1
+  _rotationSpeed: 11
+  _rotationDirection: 1
 --- !u!58 &7886047417314899439
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -112,7 +115,7 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.99, y: 0.44}
   serializedVersion: 2
   m_Radius: 4.9375
 --- !u!50 &-2098850922684116209
@@ -127,7 +130,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 1.51
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -136,3 +139,42 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 2
+--- !u!114 &508272163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3234971472060456257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a3cb8fb24ef647469fb463d7a7c106b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maximumEnemyCount: 5
+  _enemies:
+  - {fileID: 3022809125589381353, guid: f1723793906660741b3712e4729930ac, type: 3}
+--- !u!114 &5450740363530982611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3234971472060456257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd973373e9c3af478995bcf10b84492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4415809885009756657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3234971472060456257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 367ea073a6e995f4d8a3db269a4ec794, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
