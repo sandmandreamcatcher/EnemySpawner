@@ -409,7 +409,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1489081048}
-        m_MethodName: ChooseSpawnPoint
+        m_MethodName: StartSpawning
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -514,6 +514,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6733966427106587793, guid: 972501d2c78175b4aac335bf8693eaa8,
         type: 3}
+    - target: {fileID: 2448845408219071824, guid: 684e1b4de70cd974693b781562843047,
+        type: 3}
+      propertyPath: _maximumEnemyCount
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2448845409194706617, guid: 684e1b4de70cd974693b781562843047, type: 3}
     - {fileID: 5593658236022248067, guid: 684e1b4de70cd974693b781562843047, type: 3}
@@ -678,6 +683,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3022809125589381353, guid: f1723793906660741b3712e4729930ac,
         type: 3}
+    - target: {fileID: 4092462708142613495, guid: cd7fa49948a11ac4a8147131e4fe4613,
+        type: 3}
+      propertyPath: _maximumEnemyCount
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6095613632763819044, guid: cd7fa49948a11ac4a8147131e4fe4613,
         type: 3}
       propertyPath: _rotationSpeed
@@ -724,6 +734,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4205489659198388779, guid: 1a420ba463703234991d2cfdde4225f6,
         type: 3}
+    - target: {fileID: 5601241972138056984, guid: 540b4f32c2e5b7845a55d3b477ffd7b3,
+        type: 3}
+      propertyPath: _maximumEnemyCount
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7016457104083394170, guid: 540b4f32c2e5b7845a55d3b477ffd7b3,
         type: 3}
       propertyPath: m_Name
