@@ -369,7 +369,7 @@ GameObject:
   - component: {fileID: 1489081047}
   - component: {fileID: 1489081048}
   m_Layer: 0
-  m_Name: Spawners
+  m_Name: SpawnPoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -445,7 +445,7 @@ PrefabInstance:
     - target: {fileID: 943757587522422322, guid: 684e1b4de70cd974693b781562843047,
         type: 3}
       propertyPath: m_Name
-      value: CorsarCreator
+      value: ThirdSpawnPoint
       objectReference: {fileID: 0}
     - target: {fileID: 2033753746422140982, guid: 684e1b4de70cd974693b781562843047,
         type: 3}
@@ -504,6 +504,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2448845408219071824, guid: 684e1b4de70cd974693b781562843047,
         type: 3}
+      propertyPath: _spawnPoints.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2448845408219071824, guid: 684e1b4de70cd974693b781562843047,
+        type: 3}
       propertyPath: _enemyToSpawn
       value: 
       objectReference: {fileID: 6733966427106587793, guid: 972501d2c78175b4aac335bf8693eaa8,
@@ -512,7 +517,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _enemyTemplate
       value: 
-      objectReference: {fileID: 6733966427106587793, guid: 972501d2c78175b4aac335bf8693eaa8,
+      objectReference: {fileID: 3022809125589381353, guid: f1723793906660741b3712e4729930ac,
         type: 3}
     - target: {fileID: 2448845408219071824, guid: 684e1b4de70cd974693b781562843047,
         type: 3}
@@ -663,7 +668,12 @@ PrefabInstance:
     - target: {fileID: 1454579444847714453, guid: cd7fa49948a11ac4a8147131e4fe4613,
         type: 3}
       propertyPath: m_Name
-      value: InvaiderCreator
+      value: FirstSpawnPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 4092462708142613495, guid: cd7fa49948a11ac4a8147131e4fe4613,
+        type: 3}
+      propertyPath: _spawnPoints.Array.size
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4092462708142613495, guid: cd7fa49948a11ac4a8147131e4fe4613,
         type: 3}
@@ -681,7 +691,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _enemyTemplate
       value: 
-      objectReference: {fileID: 3022809125589381353, guid: f1723793906660741b3712e4729930ac,
+      objectReference: {fileID: 6733966427106587793, guid: 972501d2c78175b4aac335bf8693eaa8,
         type: 3}
     - target: {fileID: 4092462708142613495, guid: cd7fa49948a11ac4a8147131e4fe4613,
         type: 3}
@@ -724,6 +734,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5601241972138056984, guid: 540b4f32c2e5b7845a55d3b477ffd7b3,
         type: 3}
+      propertyPath: _spawnPoints.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5601241972138056984, guid: 540b4f32c2e5b7845a55d3b477ffd7b3,
+        type: 3}
       propertyPath: _enemyToSpawn
       value: 
       objectReference: {fileID: 4205489659198388779, guid: 1a420ba463703234991d2cfdde4225f6,
@@ -742,7 +757,7 @@ PrefabInstance:
     - target: {fileID: 7016457104083394170, guid: 540b4f32c2e5b7845a55d3b477ffd7b3,
         type: 3}
       propertyPath: m_Name
-      value: DroidCreator
+      value: SecondSpawnPoint
       objectReference: {fileID: 0}
     - target: {fileID: 8106136594784585854, guid: 540b4f32c2e5b7845a55d3b477ffd7b3,
         type: 3}

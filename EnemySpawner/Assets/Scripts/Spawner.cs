@@ -3,27 +3,19 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    [Range(0, 10)] [SerializeField] private int _maximumEnemyCount;
-    [SerializeField] private GameObject _enemyTemplate;
-    private List<GameObject> _enemies = new List<GameObject>();
+    [SerializeField] private List<SpawnPoint> _spawnPoints = new List<SpawnPoint>();
     private int _currentEnemyCount;
 
-    private void Start()
+    public void StartSpawning()
     {
-        for (int i = 0; i < _maximumEnemyCount; i++)
-        {
-            _enemies.Add(_enemyTemplate as GameObject);
-        }
+        _spawnPoints[_currentEnemyCount].SpawnEnemy();
+        _currentEnemyCount++;
+        ChangeSpawnPoint();
     }
 
-    public void SpawnEnemy()
+    private void ChangeSpawnPoint()
     {
-        int number = 0;
-        if (number >= 0 && number < _enemies.Count && _currentEnemyCount < _maximumEnemyCount)
-        {       
-            Instantiate(_enemies[number]);
-            _currentEnemyCount++;
-            number++;
-        }
+        if (_currentEnemyCount == _spawnPoints.Count)
+            _currentEnemyCount = 0;
     }
 }
